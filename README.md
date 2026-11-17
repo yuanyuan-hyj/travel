@@ -21,9 +21,9 @@
     <th width="33%">③ 查看预算明细</th>
   </tr>
   <tr>
-    <td valign="top"><a href="docs/images/home.png"><img src="docs/images/home.png" width="280" alt="首页：选择上海，输入5000元预算和2天旅行时间" /></a></td>
-    <td valign="top"><a href="docs/images/itinerary.png"><img src="docs/images/itinerary.png" width="280" alt="每日行程：展开第1天，展示外滩、豫园和南京路步行街的安排" /></a></td>
-    <td valign="top"><a href="docs/images/budget.png"><img src="docs/images/budget.png" width="280" alt="预算明细：住宿、餐饮、交通、门票和其他费用，总计5000元" /></a></td>
+    <td valign="top"><a href="docs/images/home.png"><img src="images/1.png" width="280" alt="首页：选择上海，输入5000元预算和2天旅行时间" /></a></td>
+    <td valign="top"><a href="docs/images/itinerary.png"><img src="images/2.png" width="280" alt="每日行程：展开第1天，展示外滩、豫园和南京路步行街的安排" /></a></td>
+    <td valign="top"><a href="docs/images/budget.png"><img src="images/3.png" width="280" alt="预算明细：住宿、餐饮、交通、门票和其他费用，总计5000元" /></a></td>
   </tr>
   <tr>
     <td>选择目的地、预算与旅行天数，一键发起行程规划。</td>
@@ -42,8 +42,8 @@
     <th width="50%">⑤ 查看 AI 回答</th>
   </tr>
   <tr>
-    <td align="center" valign="top"><a href="docs/images/chat-empty.png"><img src="docs/images/chat-empty.png" width="280" alt="AI 对话初始页：空状态提示、常见问题示例和消息输入框" /></a></td>
-    <td align="center" valign="top"><a href="docs/images/chat-response.png"><img src="docs/images/chat-response.png" width="280" alt="AI 对话结果：用户提问上海美食推荐，助手在聊天气泡中展示回答" /></a></td>
+    <td align="center" valign="top"><a href="docs/images/chat-empty.png"><img src="images/4.png" width="280" alt="AI 对话初始页：空状态提示、常见问题示例和消息输入框" /></a></td>
+    <td align="center" valign="top"><a href="docs/images/chat-response.png"><img src="images/5.png" width="280" alt="AI 对话结果：用户提问上海美食推荐，助手在聊天气泡中展示回答" /></a></td>
   </tr>
   <tr>
     <td>展示常见问题示例，用户可在底部输入框输入旅游问题并发送。</td>
@@ -261,18 +261,3 @@ data: {"done":true}
 3. 展开每日行程，查看景点、交通与预算分配。
 4. 点击“咨询 AI 助手”，输入“成都有哪些适合晚上游玩的地方？”。
 5. 展示回答逐步出现的过程，说明前后端如何传递流式数据。
-
-演示内容由实际模型响应决定。当前聊天请求只包含本次问题，进入对话页时不会自动携带行程内容。
-
-## 当前边界与后续计划
-
-当前版本聚焦行程生成和流式问答，以下能力尚待完善：
-
-- **会话与数据保存**：暂未实现登录、行程收藏、历史记录持久化及多轮上下文记忆。
-- **个人中心**：目前为占位页面，可后续接入用户资料和历史行程。
-- **流式稳定性**：完善跨网络分片的 SSE 缓冲解析、取消请求和断连处理。
-- **交互细节**：完善推荐失败展示、每日折叠项标识及快捷问题点击交互。
-- **生成结果校验**：增加行程结构校验、预算合计检查与异常结果重试。
-- **真实出行数据**：目前未接入实时票价、营业时间、地图路线或预订服务，模型生成内容属于参考建议。
-
-以上说明依据当前源码整理；运行与演示需要有效的模型配置，本文不声明线上部署、性能指标或端到端测试结果。
