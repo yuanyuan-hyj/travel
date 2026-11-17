@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+llm:
+  base-url: https://api.siliconflow.cn/v1
+  model: Pro/zai-org/GLM-5.1
+  api-key: sk-qljevulfokmeajancwevztrfscuiekiholatbjymzgtjfpac
+
